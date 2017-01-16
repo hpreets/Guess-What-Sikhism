@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "www/templates/question.html",
+			"settings":
+			{
+				"buffer_size": 4345,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/templates/topics.html",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/templates/home.html",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/templates/sub-topics.html",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/js/app.js",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/templates/sub-topic-questions.html",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/css/main.css",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/css/style.css",
+		"/C/Data/D/Astadia/dev/git/mobile/android/whatsthemeaning/buzzup/www/js/controllers.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Data\\D\\Astadia\\dev\\git\\mobile\\android\\whatsthemeaning\\buzzup",
+			"C:\\Data\\D\\Astadia\\dev\\git\\mobile\\android\\whatsthemeaning\\buzzup\\www",
+			"C:\\Data\\D\\Astadia\\dev\\git\\mobile\\android\\whatsthemeaning\\buzzup\\www\\templates",
+			"C:\\Data\\D\\Astadia\\dev\\git\\mobile\\android\\whatsthemeaning\\buzzup\\www",
+			"C:\\Data\\D\\Astadia\\dev\\git\\mobile\\android\\whatsthemeaning\\buzzup\\www\\css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blue",
+			"progress-bar",
+			"makeItRot",
+			"rotate-side-buttons",
+			"isDisabled1",
+			".clean-height",
+			".question",
+			"progress[value]::",
+			"::-webkit-progress-",
+			"::-webkit-progress-bar",
+			"animRot",
+			"makeItRot",
+			"rotate-side-buttons",
+			"reveal-que-animation",
+			"goOut",
+			"psd-icon-home",
+			"psd-tab",
+			"role",
+			"scrollBottom",
+			"showCorrect",
+			"goOut",
+			"ng-enter",
+			"rotate-side-buttons",
+			"ng-enter",
+			"reveal-animation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/templates/question.html",
+					"settings":
+					{
+						"buffer_size": 4345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

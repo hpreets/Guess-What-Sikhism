@@ -1,0 +1,83 @@
+Node version: v5.0.0
+
+Cordova version: 5.2.0
+
+Config.xml file: 
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.games.mrharpreets.wtm" version="1.4.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Gurbani Bodh</name>
+  <description>
+        A simple quiz based application to understand meaning of Gurbani words and lines.
+    </description>
+  <author email="mrharpreets@gmail.com" href="http://cordova.io">
+        Harpreet Singh
+    </author>
+  <content src="index.html"/>
+  <access origin="127.0.0.1"/>
+  <preference name="Orientation" value="portrait"/>
+  <preference name="KeepRunning" value="false"/>
+  <preference name="AndroidLaunchMode" value="singleInstance"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashScreen" value="screen"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <platform name="android">
+    <splash src="www/img/splash.png" density="port-hdpi"/>
+    <splash src="www/img/splash.png" density="port-ldpi"/>
+    <splash src="www/img/splash.png" density="port-mdpi"/>
+    <splash src="www/img/splash.png" density="port-xhdpi"/>
+  </platform>
+</widget>
+
+No Plugins Currently Installed
+
+Android platform:
+
+Available Android targets:
+----------
+id: 1 or "android-19"
+     Name: Android 4.4.2
+     Type: Platform
+     API level: 19
+     Revision: 4
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 2 or "android-21"
+     Name: Android 5.0
+     Type: Platform
+     API level: 21
+     Revision: 1
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, default/armeabi-v7a, default/x86, default/x86_64
+----------
+id: 3 or "android-22"
+     Name: Android 5.1.1
+     Type: Platform
+     API level: 22
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : default/x86, default/x86_64
+----------
+id: 4 or "Google Inc.:Google APIs:21"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+     Description: Android + Google APIs
+     Based on Android 5.0 (API level 21)
+     Libraries:
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.android.future.usb.accessory (usb.jar)
+          API for USB Accessories
+      * com.google.android.maps (maps.jar)
+          API for Google Maps
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : google_apis/armeabi-v7a, google_apis/x86, google_apis/x86_64
+

@@ -1,0 +1,83 @@
+<ion-view title="Guess What">
+  <ion-content class="text-center">
+    <div class="row ">
+        <div class="col quizHeader" style="align:right">
+            <img class="overlappingImage" src="img/progress.png" width="32" style="left:10%" />
+            <span style="position: absolute; z-index:20; left:12.5%">{{level+1}}</span>
+            
+            <!-- <span style="background-color:white;width:30%;border-radius:5px">Level: {{level+1}}</span> -->
+            <progress value="{{questionNumber+1}}" max="6"> </progress>
+        </div>
+        <div class="col quizHeader">
+            <img class="overlappingImage" src="img/coins.png" width="32" style="left:58%" />
+            
+            <span style="background-color:white;width:50%;border-radius:5px">{{remainingCoins}}</span>
+        </div>
+      </div>
+      <div class="row" style="margin: 0px;padding:5px 20px;">
+        <div class="col quesContainer">
+            <p>{{currLevel[qId].qText}}</p>
+        </div>
+      </div>
+      <!--div class="row" style="margin: 0px;padding: 0px;">
+        <div class="col punj-x-large ansContainer white-text {{userAnswerDivClass}}">
+            <p>{{currLevel[qId].userAnswer}}</p>
+        </div>
+      </div -->
+      <div class="row ansContainerRow ansContainer {{userAnswerDivClass}}" style="margin-top:10px; padding:0px">
+        <div class=" ansContainer white-text {{userAnswerDivClass}}" ng-repeat="wrd in answerV2Arr" style="margin:0px; padding:0px;" ng-show="showAnswerRow">
+          <button ng-show="showAnswerRow" class="button letter-button-user-answer button-letter-color-user-answer-{{letter.hintAns}} punj-large" ng-click="onAnswerLetterClick('{{letter.id}}')" ng-repeat="letter in wrd.newAnsWordArr">
+            {{letter.text}}
+          </button> &nbsp;&nbsp;
+        </div>
+      </div>
+      <!--div class="row">
+        <div class="col punj-x-large">
+            {{currLevel[qId].initAnswer}}
+        </div>
+      </div -->
+      <div class="row">
+        <table style="margin:auto">
+          <tr class="button-bar" style="margin-top:20px;padding:0px;margin-bottom:-15px">
+            <td style="width:65%" colspan="3">
+                <button class="button button-dark hint-button" ng-click="onHintClick()">
+                  Show 1 letter
+                  <img src="img/coins.png" style="vertical-align:middle" width="32" />
+                  <span >30</span>
+                </button>&nbsp;
+              </td>
+              <td style="width:35%" colspan="3">
+                <button class="button button-dark hint-button" style="height:36px" ng-click="resetAnsweredLetters()">Clear all</button>
+            </td>
+          </tr>
+          <tr class="button-bar" style="margin-bottom:15px;padding:0px">
+            <td style="width:100%" colspan="6" width="100%">
+                <button class="button button-dark hint-button" ng-click="solvePuzzle()">
+                  Solve puzzle
+                  <img src="img/coins.png" style="vertical-align:middle" width="32" />
+                  <span >70</span>
+                </button>
+            </td>
+            <!--td  class="padding:10px">
+                <button class="button letter-button button-help-color" ng-click="onHintClick()">Hint</button>
+            </td-->
+          </tr>
+
+          <tr class="button-bar">
+            <td ng-repeat="letter in answer1" >
+                <button class="button letter-button button-letter-color punj-large" ng-click="onLetterClick('{{letter.text}}')">
+                  {{letter.text}}
+                </button>
+            </td>
+          </tr>
+          <tr class="button-bar">
+            <td ng-repeat="letter in answer2" >
+                <button class="button letter-button button-letter-color punj-large" ng-click="onLetterClick('{{letter.text}}')">{{letter.text}}</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+  </ion-content>
+</ion-view>

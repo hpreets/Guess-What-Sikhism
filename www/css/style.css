@@ -1,0 +1,308 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: "GurbaniAkhar";
+    src: url("../fonts/GURAKHAR.TTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.punj-small {
+    font-family: "GurbaniAkhar" !important;
+    font-size: 12px;
+}
+.punj-medium {
+    font-family: "GurbaniAkhar" !important;
+    font-size: 18px;
+}
+.punj-large {
+    font-family: "GurbaniAkhar" !important;
+    font-size: 24px;
+}
+.punj-x-large {
+    font-family: "GurbaniAkhar" !important;
+    font-size: 32px;
+}
+.scroll-content {
+	background: url('./../img/bkg.jpg');
+	background-color:#F3EBC5;
+}
+.letter-button {
+  border-radius: 9px;
+  border-width: 2px;
+  min-width: 52px;
+  min-height: 47px;
+  vertical-align: top;
+  text-align: center;
+  padding: 0px;
+}
+.hint-button {
+  min-height:40px;
+  line-height:24px;
+  width:100%;
+  border-radius: 5px;
+  border-width: 2px;
+  vertical-align: top;
+  text-align: center;
+  padding: 0px;
+}
+.letter-button-user-answer {
+  border-radius: 9px;
+  border-width: 2px;
+  min-width: 39px;
+  min-height: 48px;
+  vertical-align: top;
+  text-align: center;
+  padding: 0px;
+}
+
+.ques-option-button {
+  line-height: 25px;
+  padding: 0px 0px 0px 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+.side-bar-background {background-color:#000000;background-size:cover;width:115%}
+.side-bar-background p{bottom:0;position:absolute;margin-left:9px;color:#fff;font-size:16px;margin-bottom:12px}
+.side-menu-content-top{margin-top:40px}
+.side-bar-header{height:100px;width:115%;border-width:0;border-style:none;border-top:none;border-bottom:none;background-color:transparent;background-size:0;left:-5px;top:-5px}
+
+.psd-tab {
+background:0 0;
+width:auto;
+right:0;
+margin-bottom:23px;
+margin-right:6px;
+border:0px
+}
+
+.psd-tab-left {
+background:0 0;
+width:auto;
+margin-bottom:23px;
+margin-left:6px;
+border:0px
+}
+
+.psd-tab-item {
+height:100px;
+width:auto;
+padding:5px;
+}
+
+.psd-icon-home {
+height:56px!important;
+width:56px!important;
+border-radius:50%;
+color:#fff;
+background:#FF4081;
+font-size:24px!important;
+-webkit-box-shadow:2px 3px 3px 0 rgba(41,41,41,.3);
+box-shadow:2px 3px 3px 0 rgba(41,41,41,.3);
+padding-top:2px;
+}
+
+.reveal-q-animation.ng-enter {
+-webkit-transition: 1s ease-in ;
+transition: 1s ease-in ;
+opacity:0;
+}
+/*.reveal-a-animation.ng-enter {
+-webkit-transition: 0.5s linear all;
+transition: 0.5s linear all;
+opacity:0;
+}*/
+.reveal-o-animation.ng-enter {
+-webkit-transition: 0.5s linear all ;
+transition: 0.5s linear all ;
+opacity:0;
+}
+
+.reveal-q-animation.ng-enter.ng-enter-active,
+.reveal-a-animation.ng-enter.ng-enter-active,
+.reveal-round-animation.ng-enter.ng-enter-active,
+.reveal-o-animation.ng-enter.ng-enter-active {
+opacity:1;
+}
+
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+    border: solid 0px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+    background-color:white;
+}
+
+.col:last-child {
+    border-right: solid 0px gray;
+}
+
+.row:last-child .col {
+    border-bottom: solid 0px gray;
+}
+
+progress {
+  margin: 0px auto;
+  width: 50%;
+}
+.progress-bar {
+  /*margin-top:29px;*/
+  border-radius: 5px;
+}
+progress[value] {
+  -webkit-appearance:none;
+  appearance:none;
+  -moz-appearance:none;
+  height:19px;
+  border:none;
+}
+.blue-range {
+  float:left;
+  width:100%;
+  border-top:1px solid;
+  border-bottom:1px solid;
+}
+progress::-webkit-progress-bar {
+  background-color:#eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color:#5bc0de;
+  border-radius: 5px;
+  /*background-image:0 33% 66% 66in;*/
+  background-size:35px 20px 100% 100%;
+  -webkit-animation:animate-stripes 5s linear infinite;
+  animation:animate-stripes 5s linear infinite;
+  -webkit-transition:width .6s ease;
+  -o-transition:width .6s ease;
+  transition:width .6s ease;
+}
+.addtoredprog {
+  box-shadow:0 2px 60px 5px;
+  border-left:1px solid;
+  border-right:1px solid;
+}
+.nav-button {
+  font-size:18px;
+  line-height:25px;
+  height:45px;
+  min-height:50px
+}
+
+.topics-page-card {
+margin:0!important;
+padding:0!important;
+border-radius:5px;
+}
+
+.topic-name-topic {
+background-color:#f8f8f8;
+height:44px;
+width:100%;
+color:#777;
+padding:11px 20px 11px 5px;
+}
+.card div.topics-img {
+/*display:block;*/
+/*width:64px;*/
+font-size:22px;
+height:24px;
+margin:42px auto;
+}
+.homeTopicCol {
+    /*border: solid 0px grey;
+    border-bottom-style: none;
+    border-right-style: none;*/
+    background-color: transparent;
+}
+.btn-disabled, .button-assertive {
+  transition: 0.5s round ;
+}
+
+div.quizHeader {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+div.quesContainer {
+  height: 10em;
+  background-color: #f1f193;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+div.quesContainer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+div.ansContainerRow {
+  background-color: #aaa;
+}
+div.ansContainer {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaa;
+}
+div.ansContainer p {
+  margin: 0px
+}
+.white-text {
+  color: wheat;
+}
+.button-letter-color {
+  border-color: #b7b2ea;
+  background-color: #100567;
+  color: #fff;
+}
+.button-letter-color-user-answer-true {
+  border-color: #eee;
+  background-color: #666;
+  color: #fff;
+}
+.button-letter-color-user-answer-false {
+  border-color: #eee;
+  background-color: #111;
+  color: #fff;
+}
+.button-help-color {
+  border-color: #73e688;
+  background-color: #066116;
+  color: #fff;
+}
+
+div.greenBlock {
+  background-color: green;
+  -webkit-transition: 0.5s linear all ;
+  transition: 0.5s linear all ;
+}
+div.redBlock {
+  background-color: red;
+  -webkit-transition: 0.5s linear all ;
+  transition: 0.5s linear all ;
+}
+
+// For popup dialog
+.popup{
+  background-color:azure;
+}
+.popup-head{
+  padding: 0px;
+  border-bottom: 0px solid #eee;
+}
+.popup-body{
+  background-color:azure;
+}
+.popup-buttons{
+  background-color:azure;
+}
+.overlappingImage {
+  position: absolute;
+  z-index: 10;
+}

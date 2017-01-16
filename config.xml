@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.games.mrharpreets.gwsikhhistory" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Guess What - Sikh History</name>
+  <description>
+        Interesting Sikh History game
+  </description>
+  <author email="mrharpreets@gmail.com" href="http://cordova.io">
+	Harpreet Singh
+  </author>
+  <content src="index.html"/>
+  <access origin="127.0.0.1"/>
+  <preference name="Orientation" value="portrait"/>
+  <preference name="KeepRunning" value="false"/>
+  <preference name="AndroidLaunchMode" value="singleInstance"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashScreen" value="screen"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <platform name="android">
+    <splash src="www/img/splash.png" density="port-hdpi"/>
+    <splash src="www/img/splash.png" density="port-ldpi"/>
+    <splash src="www/img/splash.png" density="port-mdpi"/>
+    <splash src="www/img/splash.png" density="port-xhdpi"/>
+  </platform>
+</widget>

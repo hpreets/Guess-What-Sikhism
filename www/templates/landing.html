@@ -1,0 +1,51 @@
+<ion-view title="Guess What">
+  <ion-content class="text-center">
+    <div class="row ">
+      <div class="col">
+        <h1>Guess What</h1>
+        <h2>Sikh History and more</h2>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col quesContainer" style="background-color:#b2e29a">
+          <!--img class="overlappingImage" src="img/progress.png"-->
+            <span style="font-size:20px">Level<h1>{{level+1}}</h1></span>
+          <!--/img-->
+      </div>
+      <div class="col quesContainer" style="background-color:#97e9ec">
+          <!-- <img class="overlappingImage" src="img/coins.png"> -->
+            <span style="font-size:20px">Coins available<h1>{{remainingCoins}}</h1></span>
+          <!-- </img> -->
+      </div>
+    </div>
+    <div class="row " >
+      <div class="col quesContainer" style="height:80px">
+        <button class="button button-block button-royal" ng-click="modal.show()">
+          How to play
+        </button>
+      </div>
+      <div class="col quesContainer" style="height:80px">
+        <button class="button button-block button-positive" ng-click="startPuzzle()">
+          Start
+        </button>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col" style="background-color: #f1f193;">
+        <h4>Instructions</h4>
+        <ul style="text-align: left; margin: 10px;">
+          <li>* Check your knowledge of Sikh History, Punjabi and Gurbani. Guess what is the answer to the question.</li>
+          <li>* You get 200 coins at the start that you can use during the game. For each correct answer, you get 10 coins.</li>
+          <li>* Got stuck with a question: Reveal 1 letter but this will cost you 30 coins.</li>
+          <li>* Want to know the answer: Solve puzzle at cost of 70 coins.</li>
+          <li>* Know more by tapping "How to play" button above.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col quesContainer" style="height:30px;background-color:#ddd;">
+        Contact us at mrharpreets@gmail.com
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

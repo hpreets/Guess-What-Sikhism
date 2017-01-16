@@ -1,0 +1,36 @@
+<div class="text-center">
+  <h2 ng-if="!levelComplete">YOU GOT IT!</h2>
+  <h3 ng-if="levelComplete">LEVEL COMPLETE!</h3>
+
+  <p>
+    {{currLevel[qId].qText}}
+    <br/>
+    <p class="punj-large">{{answerText}}</p>
+  </p>
+  <br/>
+  <p>
+    <span ng-if="!levelComplete">
+      <img src="img/star.png" width="24" height="24" />
+      <img src="img/star.png" width="24" height="24" />
+      <img src="img/star.png" width="24" height="24" />
+    </span>
+    <span ng-if="levelComplete">
+      <img src="img/fireworks.gif"  />
+    </span>
+    <p/>
+    <span vertical-align="top" ng-if="!levelComplete">
+      <img src="img/coins.png" width="24" /> +10 coins
+    </span>
+    <h3 ng-if="levelComplete">Level {{level+1}} Complete! </h3>
+    <span vertical-align="top" ng-if="levelComplete">
+      <h4>Double Rewards</h4>
+      <img src="img/coins.png" width="24" /> +20 coins
+    </span>
+  </p>
+  <br/>
+  <p ng-if="!levelComplete">
+    <progress value="{{qId+1}}" max="5"> </progress>
+    <br/>
+    {{5-qId-1}} more word(s) to unlock next level.
+  </p>
+</div>
