@@ -229,7 +229,7 @@ div.quizHeader {
 }
 
 div.quesContainer {
-  height: 10em;
+  height: 12em;
   background-color: #f1f193;
   display: flex;
   align-items: center;
@@ -237,20 +237,33 @@ div.quesContainer {
 }
 div.quesContainer p {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
+span.ansContainerRow {
+  background-color: #aaa;
+}
 div.ansContainerRow {
   background-color: #aaa;
 }
-div.ansContainer {
+span.ansContainer {
   height: 5em;
-  display: flex;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  background-color: #aaa;
+}
+div.ansContainer {
+  height: 7em;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
   background-color: #aaa;
 }
 div.ansContainer p {
+  margin: 0px
+}
+span.ansContainer p {
   margin: 0px
 }
 .white-text {

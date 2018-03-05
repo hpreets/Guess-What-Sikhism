@@ -33,8 +33,9 @@ angular.module('guesswhat.controllers', [])
 
 .controller('HomeCtrl', function ($scope, $timeout, $ionicPopup, LocalStorage) {
   $scope.gotoQuestion = function() {
-    // LocalStorage.setCurrentLevel(18);
-    // LocalStorage.setRemainingCoins(100);
+    // LocalStorage.setCurrentLevel(22);
+    // LocalStorage.setCurrentLevelQuesIdx(1);
+    // LocalStorage.setRemainingCoins(200);
     var level = LocalStorage.getCurrentLevel();
     var qNumb = LocalStorage.getCurrentLevelQuesIdx();
     var coins = LocalStorage.getRemainingCoins();
@@ -82,11 +83,14 @@ angular.module('guesswhat.controllers', [])
     }
     else {
       var answerArr = currLevelData[idx].answerV2.replace(/ /g, ';').split(';');
+      console.log('answerArr :::' + answerArr.length);
+      console.log('MAX_AVAILABLE_LETTERS_TO_CHOOSE :::' + MAX_AVAILABLE_LETTERS_TO_CHOOSE);
       for (var ctr = answerArr.length; ctr < 100; ctr++) {
         var rndLettr = randomLetter();
         answerArr.push(rndLettr);
         answerArr = getUnique(answerArr);
-        if (answerArr.length == MAX_AVAILABLE_LETTERS_TO_CHOOSE) break;
+        console.log('answerArr :::' + answerArr.length);
+        if (answerArr.length >= MAX_AVAILABLE_LETTERS_TO_CHOOSE) break;
       }
 
       shuffle(answerArr);
@@ -108,9 +112,10 @@ angular.module('guesswhat.controllers', [])
     var answerV2Arr = [];
     var ansWordArr = []
     var totalChars = 0;
-    var charCounter = 0;
+    var charCounter = 0, splitAt = 0;
     for (var ctr=0; ctr < currLevelData[qNumb].answerV2.split(' ').length; ctr++) {
       ansWordArr = currLevelData[qNumb].answerV2.split(' ')[ctr].split(';');
+      if (totalChars + ansWordArr.length >= 9  &&  splitAt == 0) splitAt = ctr + 1;
       totalChars += ansWordArr.length;
       var newAnsWordArr = [];
       for (var innerCtr = 0; innerCtr < ansWordArr.length; innerCtr++) {
@@ -122,6 +127,7 @@ angular.module('guesswhat.controllers', [])
     // console.log(answerV2Arr);
     $scope.answerV2Arr = answerV2Arr;
     $scope.totalChars = totalChars;
+    $scope.splitAt = splitAt;
     // console.log('level :::' + $scope.level);
   }
 
@@ -177,7 +183,7 @@ angular.module('guesswhat.controllers', [])
           // console.log(answerV2Arr);
           // $scope.answerV2Arr = answerV2Arr;
 
-				}, 1500);
+				}, TIMEOUT_FOR_CORRECT_ANSWER_DIALOG);
 
       }
       else {

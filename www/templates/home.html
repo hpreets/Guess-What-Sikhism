@@ -24,12 +24,15 @@
             <p>{{currLevel[qId].userAnswer}}</p>
         </div>
       </div -->
-      <div class="row ansContainerRow ansContainer {{userAnswerDivClass}}" style="margin-top:10px; padding:0px">
-        <div class=" ansContainer white-text {{userAnswerDivClass}}" ng-repeat="wrd in answerV2Arr" style="margin:0px; padding:0px;" ng-show="showAnswerRow">
-          <button ng-show="showAnswerRow" class="button letter-button-user-answer button-letter-color-user-answer-{{letter.hintAns}} punj-large" ng-click="onAnswerLetterClick('{{letter.id}}')" ng-repeat="letter in wrd.newAnsWordArr">
-            {{letter.text}}
-          </button> &nbsp;&nbsp;
-        </div>
+      
+      <div class="ansContainerRow ansContainer {{userAnswerDivClass}}" style="margin-top:10px; padding-top:15px; padding-bottom:{15-(splitAt*2)}px; height:{{6+(splitAt>0?3:0)}}em;"> <!-- row ansContainerRow ansContainer -->
+        <span class="white-text {{userAnswerDivClass}}" ng-repeat="wrd in answerV2Arr" style="margin:5px; padding:0px;" ng-show="showAnswerRow">
+          <span ng-show="splitAt == ($index + 1)"><br /></span>
+          
+          <button ng-show="showAnswerRow  &&  wrd.newAnsWordArr[0].ansText != '[br]'" class="button letter-button-user-answer button-letter-color-user-answer-{{letter.hintAns}} punj-large" ng-click="onAnswerLetterClick('{{letter.id}}')" ng-repeat="letter in wrd.newAnsWordArr">
+            {{letter.text}} 
+          </button>
+        </span>
       </div>
       <!--div class="row">
         <div class="col punj-x-large">
